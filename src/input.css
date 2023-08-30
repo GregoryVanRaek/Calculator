@@ -1,0 +1,85 @@
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  .calculator{
+    @apply bg-black flex mt-10 flex-col items-center gap-6 rounded-lg;
+    width:420px;
+    height:575px;
+  }
+
+  .math{
+    @apply flex gap-6 flex-wrap justify-center mx-5;
+  }
+
+  /*.number{
+    @apply bg-slate-600 border-2 border-slate-600 rounded-full w-16 h-16 flex justify-center items-center text-3xl text-white;
+  }*/
+
+  .number{
+    @apply bg-slate-600 border-b-4 border-slate-800 rounded-full w-16 h-16 flex justify-center items-center text-3xl text-white;
+    text-shadow: 0px -1px ;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    float: left;
+  }
+
+  .number:active{
+    transform: translate(0,5px);
+    -webkit-transform: translate(0, 5px);
+    border: 2px;
+  }
+
+ .number-xl{
+    width:154px
+  }
+
+  .operator{
+    @apply bg-orange-400 border-4 border-orange-400 rounded-full w-16 h-16 flex justify-center items-center text-3xl text-white;
+    text-shadow: 0px -1px ;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    float: left;
+  }
+
+  .operator:active{
+    transform: translate(0,5px);
+    -webkit-transform: translate(0, 5px);
+  }
+
+  .result{
+    @apply bg-orange-400 border-2 border-orange-400 rounded-full w-16 h-16 flex justify-center items-center text-3xl text-white;
+    text-shadow: 0px -1px ;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    float: left;
+  }
+
+  .result:active{
+    transform: translate(0,5px);
+    -webkit-transform: translate(0, 5px);
+  }
+
+  .screen{
+    @apply bg-white mt-2 flex flex-col justify-between items-end gap-0.5 p-2 ;
+    width:400px;
+    height:100px;
+  }
+
+  .special{
+    @apply bg-gray-400 border-2 border-gray-400 rounded-full w-16 h-16 flex justify-center items-center text-3xl;
+    text-shadow: 0px -1px ;
+    transition: all .1s;
+    -webkit-transition: all .1s;
+    float: left;
+  }
+
+  .special:active{
+    transform: translate(0,5px);
+    -webkit-transform: translate(0, 5px);
+  }
+
+  #undo{
+    @apply bg-red-600 border-red-600 text-white
+  }
